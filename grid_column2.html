@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Genea Haglund-->
+<!--Assignment Completed on 4-14-22-->
+<head>
+    <title>Grid Column Property 2</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Genea Haglund">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+         body {font-family: Arial, Helvetica, sans-serif;}
+         
+         .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            background-color: rgb(253, 156, 156);
+            padding: 10px;
+        }   
+
+        .grid-container > div {
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .item1 {
+            grid-column: 1 / 5;
+        }
+        @media only screen and (max-width: 600px) {
+               body {
+                    background-color: blue;
+            }
+        }    
+    </style>
+</head>
+<body>
+    <h1>Grid Column Property 2</h1>
+    
+    <p> 4 through 15 would all contain photos</p>
+    <p> About and Contact would be clickable to bring you to other screens</p>
+
+    <div class="grid-container">
+        <div class="item1">Gallery</div>
+        <div class="item2">About</div>
+        <div class="item3">Contact</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+        <div class="item10">10</div>
+        <div class="item11">11</div>
+        <div class="item12">12</div>
+        <div class="item13">13</div>
+        <div class="item14">14</div>
+        <div class="item15">15</div>
+    </div>
+</body>
